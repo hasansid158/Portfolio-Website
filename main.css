@@ -27,13 +27,12 @@ html {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  background: #123;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background: url(images/sitebg.jpg) no-repeat center fixed;
-  background-size: 100% 100%;
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -225,7 +224,13 @@ li {
   z-index: 1;
 }
 
-.landing-text h1 {
+.landing-text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-text span h1 {
   font-size: 20rem;
   font-family: TheHistoria, sans-serif;
   background: linear-gradient(to top, #ffe838, #fd57bf);
@@ -234,6 +239,11 @@ li {
   -webkit-text-fill-color: transparent;
   padding: 2rem;
   user-select: none;
+}
+
+.landing-text span .m,
+.landing-text span .s {
+  width: 14%;
 }
 
 .landing-text h6 {
@@ -275,6 +285,7 @@ li {
 
 .about-details {
   flex: 1;
+  text-align: center;
 }
 
 .social-media {
@@ -322,6 +333,7 @@ li {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0;
+  font-size: 15px;
 }
 
 .icon-container {
@@ -568,7 +580,27 @@ input[type="submit"]:hover {
   font-size: 1.4rem;
 }
 
+.copyright h2 {
+  font-size: 15px;
+}
+
+.arrows {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.arrows div {
+  width: 1px;
+  height: 50px;
+  background-color: white;
+}
+
 /*End footer*/
+
+/* rain start */
 
 /*Start animations*/
 
@@ -588,6 +620,17 @@ input[type="submit"]:hover {
 
 /*Start media queries*/
 
+@media screen and (max-width: 1350px) {
+  .landing-text span .m,
+  .landing-text span .s {
+    width: 19%;
+  }
+
+  .landing-text span h1 {
+    font-size: 16rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .nav-list {
     flex-direction: column;
@@ -598,15 +641,15 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background: url(images/sitebg.jpg) no-repeat center fixed;
-    background-size: cover;
+  .landing-text span h1 {
+    font-size: 13rem;
   }
-  .landing-text h1 {
-    font-size: 15rem;
+  .landing-text span .m,
+  .landing-text span .s {
+    width: 19%;
   }
   .landing-text h6 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .nav-link {
     font-size: 4.5rem;
@@ -642,16 +685,18 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .landing-text span h1 {
+    font-size: 12rem;
+  }
+  .landing-text span .m,
+  .landing-text span .s {
+    width: 20%;
+  }
   .menu-toggler {
     top: 2rem;
     right: 2rem;
   }
-  .landing-text h1 {
-    font-size: 8rem;
-  }
-  .landing-text h6 {
-    font-size: 1.4rem;
-  }
+
   .nav-link {
     font-size: 3.5rem;
   }
@@ -682,6 +727,26 @@ input[type="submit"]:hover {
   }
   .up {
     right: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing-text span h1 {
+    font-size: 9rem;
+  }
+  .landing-text span .m,
+  .landing-text span .s {
+    width: 17%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .landing-text span h1 {
+    font-size: 7rem;
+  }
+  .landing-text span .m,
+  .landing-text span .s {
+    width: 18%;
   }
 }
 

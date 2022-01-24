@@ -50,14 +50,12 @@ head::before {
   @include dots(40);
   animation-duration: 42s;
   animation-delay: -23s;
-  width: 500px;
 }
 
 head::after {
   @include dots(40);
   animation-duration: 41s;
   animation-delay: -19s;
-  width: 500px;
 }
 
 @keyframes move {

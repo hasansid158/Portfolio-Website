@@ -620,6 +620,16 @@ input[type="submit"]:hover {
 
 /*Start media queries*/
 
+@media screen and (max-height: 560px) {
+  .nav-list li {
+    margin: 0 0;
+  }
+
+  .nav-list li a {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 1350px) {
   .landing-text span .m,
   .landing-text span .s {

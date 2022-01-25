@@ -22,21 +22,13 @@ t1.to(".landing-text", {
     ".landing-text span h1",
     {
       duration: 2,
-      backgroundImage: "linear-gradient(to top, #fd57bf, #ffe838)",
+      backgroundImage: "linear-gradient(to top, #fd57bf 0%, #ffe838 80%)",
       backgroundClip: "text",
     },
     "-=2"
   )
   .to(".landing-text", { duration: 2, autoAlpha: 0 })
-  .to(
-    ".landing-text span h1",
-    {
-      duration: 2,
-      backgroundImage: "linear-gradient(to top, #ffe838, #fd57bf)",
-      backgroundClip: "text",
-    },
-    "-=2"
-  )
-  .to(".m", { duration: 2, x: "-15vw", scale: 2 }, "-=2")
-  .to(".s", { duration: 2, x: "15vw", scale: 2 }, "-=2")
-  .to(".h", { duration: 2, y: "-10vh" }, "-=2");
+
+  .to(".m", { duration: 2, x: "-6vw" }, "-=2")
+  .to(".h", { duration: 2, scale: 1.6 }, "-=2")
+  .to(".s", { duration: 2, x: "6vw" }, "-=2");

@@ -238,7 +238,7 @@ li {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 2rem;
+  padding: 5rem 0rem;
   user-select: none;
 }
 

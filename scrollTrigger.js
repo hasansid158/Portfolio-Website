@@ -15,20 +15,20 @@ const t1 = gsap.timeline({
 
 t1.to(".landing-text", {
   duration: 2,
-  y: "30vh",
+  y: "35vh",
   autoAlpha: 1,
 })
   .to(
     ".landing-text span h1",
     {
       duration: 2,
-      backgroundImage: "linear-gradient(to top, #fd57bf 0%, #ffe838 80%)",
+      backgroundImage: "linear-gradient(to top, #fd57bf 25%, #ffe838 50%)",
       backgroundClip: "text",
     },
     "-=2"
   )
+  .to(".landing-text h6", { duration: 0.65, autoAlpha: 0 }, "-=2")
   .to(".landing-text", { duration: 2, autoAlpha: 0 })
-
-  .to(".m", { duration: 2, x: "-6vw" }, "-=2")
-  .to(".h", { duration: 2, scale: 1.6 }, "-=2")
-  .to(".s", { duration: 2, x: "6vw" }, "-=2");
+  .to(".m", { duration: 2, x: "-6vw", scale: 0.85 }, "-=2")
+  .to(".s", { duration: 2, x: "6vw", scale: 0.85 }, "-=2")
+  .to(".h", { duration: 2, scale: 1.5 }, "-=2");

@@ -6,7 +6,7 @@
         em
         (-0.5+ (random()) * 3) +
         em
-        7px
+        6px
         hsla(random() * 360, 100%, 50%, 0.9);
   }
   text-shadow: $text-shadow;

@@ -291,12 +291,12 @@ li {
 }
 
 .social-media {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .social-media i {
   font-size: 5rem;
-  transition: color 650ms;
+  transition: color 250ms;
 }
 
 .fa-facebook-square:hover {
@@ -309,6 +309,16 @@ li {
 
 .fa-linkedin-in:hover {
   color: #4267b7;
+}
+
+.resume {
+  font-size: 22px;
+  margin-top: 8px;
+  color: #ffe838;
+  transition: color 250ms;
+}
+.resume:hover {
+  color: #fd57bf;
 }
 
 /*End about*/
@@ -523,7 +533,7 @@ li {
   left: -21rem;
   text-align: right;
   min-width: 12rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .timeline .date::after {
@@ -760,7 +770,8 @@ input[type="submit"]:hover {
     font-size: 1.6rem;
   }
   .timeline .date::before {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    left: -19rem;    
   }
   form {
     width: 100%;

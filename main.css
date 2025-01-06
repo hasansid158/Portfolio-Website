@@ -287,7 +287,7 @@ li {
 .about-details {
   flex: 1;
   text-align: center;
-  max-width: 715px;
+  max-width: 700px;
 }
 
 .about-details b {
@@ -299,7 +299,7 @@ li {
 }
 
 .social-media {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .social-media i {
@@ -307,24 +307,21 @@ li {
   transition: color 250ms;
 }
 
-.fa-facebook-square:hover {
-  color: #4267b7;
+.fa-linkedin:hover {
+  color: #ffe838;
 }
 
-.fa-twitter-square:hover {
-  color: #38a1f3;
-}
-
-.fa-linkedin-in:hover {
-  color: #4267b7;
+.fa-github:hover {
+  color: #ffe838;
 }
 
 .resume {
   font-size: 22px;
-  margin-top: 8px;
+  margin-top: 2rem;
   color: #ffe838;
   transition: color 250ms;
 }
+
 .resume:hover {
   color: #fd57bf;
 }
@@ -350,7 +347,7 @@ li {
 }
 
 .skill-list {
-  max-width: 970px;
+  max-width: 1020px;
 }
 
 .skill-list ul {
@@ -675,9 +672,11 @@ input[type="submit"]:hover {
   0% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
   }
+
   70% {
     box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
   }
@@ -688,6 +687,7 @@ input[type="submit"]:hover {
 /*Start media queries*/
 
 @media screen and (max-width: 1350px) {
+
   .landing-text span .m,
   .landing-text span .s {
     width: 19%;
@@ -702,6 +702,7 @@ input[type="submit"]:hover {
   .nav-list {
     flex-direction: column;
   }
+
   li {
     margin: 2rem 0;
   }
@@ -711,44 +712,57 @@ input[type="submit"]:hover {
   .landing-text span h1 {
     font-size: 13rem;
   }
+
   .landing-text span .m,
   .landing-text span .s {
     width: 19%;
   }
+
   .landing-text h6 {
     font-size: 2rem;
   }
+
   .nav-link {
     font-size: 4.5rem;
   }
+
   .about-heading h1 {
     font-size: 8rem;
   }
+
   .section-heading h1 {
     font-size: 3rem;
   }
+
   .about-details .nav-list {
     flex-direction: initial;
   }
+
   .about-details li {
     margin: 0 2rem;
   }
+
   .icon-container {
     width: 7rem;
     height: 7rem;
   }
+
   .icon-container i {
     font-size: 4rem;
   }
+
   .timeline ul {
     margin: 0 0 0 auto;
   }
+
   .timeline .date:before {
     left: -20rem;
   }
+
   .timeline .date::after {
     left: -5.9rem;
   }
+
   .has-margin-right {
     margin-right: 2rem;
   }
@@ -758,10 +772,12 @@ input[type="submit"]:hover {
   .landing-text span h1 {
     font-size: 12rem;
   }
+
   .landing-text span .m,
   .landing-text span .s {
     width: 20%;
   }
+
   .menu-toggler {
     top: 2rem;
     right: 2rem;
@@ -770,29 +786,37 @@ input[type="submit"]:hover {
   .nav-link {
     font-size: 3.5rem;
   }
+
   .about .container {
     flex-direction: column;
   }
+
   .profile-img {
     margin: 0 0 7rem 0;
   }
+
   .portfolio-img {
     margin: 0 0 2rem 0;
   }
+
   .portfolio-description {
     margin: 0;
     order: 2;
   }
+
   .timeline p {
     font-size: 1.6rem;
   }
+
   .timeline .date::before {
     font-size: 1.1rem;
     left: -19rem;
   }
+
   form {
     width: 100%;
   }
+
   .up {
     right: 2rem;
   }
@@ -802,6 +826,7 @@ input[type="submit"]:hover {
   .landing-text span h1 {
     font-size: 9rem;
   }
+
   .landing-text span .m,
   .landing-text span .s {
     width: 17%;
@@ -822,6 +847,7 @@ input[type="submit"]:hover {
   .landing-text span h1 {
     font-size: 7rem;
   }
+
   .landing-text span .m,
   .landing-text span .s {
     width: 18%;
